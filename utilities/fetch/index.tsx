@@ -10,7 +10,7 @@ export const FetchApi = async (endpoint: string) => {
                 "Content-Type": "application/json"
             },
             next:{
-                revalidate:60
+                revalidate:1
             }
         }).then((res) => res.json())
 

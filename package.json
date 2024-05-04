@@ -9,9 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.19",
+    "axios": "^1.6.8",
     "next": "14.2.3",
     "react": "^18",
     "react-dom": "^18",
+    "react-hook-form": "^7.51.4",
     "sass": "^1.76.0"
   },
   "devDependencies": {

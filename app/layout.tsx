@@ -1,6 +1,7 @@
 import type {Metadata} from "next";
 import "./globals.scss";
 import Layout from "@/components/layout";
+import StateProvider from "@/context";
 
 
 export const metadata: Metadata = {
@@ -17,9 +18,11 @@ export default function RootLayout(
     return (
         <html lang="en">
         <body>
-        <Layout>
-            {children}
-        </Layout>
+        <StateProvider>
+            <Layout>
+                {children}
+            </Layout>
+        </StateProvider>
         </body>
         </html>
     );
